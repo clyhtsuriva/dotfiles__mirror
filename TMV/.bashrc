@@ -8,7 +8,7 @@ export PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 0)\]\t \[$(tput s
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 
 #PERSONAL EDITS
-alias cat='lolcat'
+alias cat='bat'
 alias bat_pow='sudo upower -i /org/freedesktop/UPower/devices/battery_BAT0'
 alias la='ls -A'
 alias l='ls'
