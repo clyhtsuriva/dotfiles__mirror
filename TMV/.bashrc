@@ -23,3 +23,9 @@ alias imperio='sudo user_imperio.py'
 TERMINAL='xterm'
 alias ipconfig='curl ipconfig.io'
 alias cp='cp -v'
+
+# append to the history instead of overwriting (good for multiple connections)
+shopt -s histappend
+
+# ignore duplicate commands, ignore commands starting with a space
+export HISTCONTROL=erasedups
