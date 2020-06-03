@@ -7,7 +7,7 @@ export PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 0)\]\t \[$(tput s
 [ -f "$HOME/.config/shortcutrc" ] && source "$HOME/.config/shortcutrc" # Load shortcut aliases
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 
-#PERSONAL EDITS
+###PERSONAL EDITS
 alias cat='bat'
 alias bat_pow='sudo upower -i /org/freedesktop/UPower/devices/battery_BAT0'
 alias la='ls -A'
@@ -16,13 +16,14 @@ alias ll='ls -l'
 alias display='sxiv'
 alias xbacklight='sudo xbacklight'
 export WINDOWS='/mnt/windows'
-export PATH=$PATH:/home/mas/py/:/home/linuxbrew/.linuxbrew/bin/
+export PATH=$PATH:/home/mas/py/
 alias nox='sudo user_nox.py'
 alias incendio='user_incendio.py'
 alias imperio='sudo user_imperio.py'
 TERMINAL='xterm'
 alias ipconfig='curl ipconfig.io'
 alias cp='cp -v'
+alias rmac='rmac.py'
 
 # append to the history instead of overwriting (good for multiple connections)
 shopt -s histappend
