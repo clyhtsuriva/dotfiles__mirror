@@ -17,13 +17,14 @@ alias display='sxiv'
 alias xbacklight='sudo xbacklight'
 export WINDOWS='/mnt/windows'
 export PATH=$PATH:/home/mas/py/
-alias nox='sudo user_nox.py'
+alias nox='user_nox.py'
 alias incendio='user_incendio.py'
 alias imperio='sudo user_imperio.py'
-TERMINAL='xterm'
+export TERMINAL='xterm'
 alias ipconfig='curl ipconfig.io'
 alias cp='cp -v'
 alias rmac='rmac.py'
+export BAT_THEME="Dracula"
 
 # append to the history instead of overwriting (good for multiple connections)
 shopt -s histappend

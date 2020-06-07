@@ -7,7 +7,7 @@ export PATH="$PATH:$HOME/.local/bin/"
 
 # Default programs:
 export EDITOR="nvim"
-export TERMINAL="st"
+export TERMINAL="xterm"
 export BROWSER="firefox"
 export READER="zathura"
 export FILE="lf"
@@ -40,5 +40,3 @@ echo "$0" | grep "bash$" >/dev/null && [ -f ~/.bashrc ] && source "$HOME/.bashrc
 
 # Switch escape and caps if tty:
 sudo -n loadkeys ~/.local/share/larbs/ttymaps.kmap 2>/dev/null
-eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
