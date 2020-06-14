@@ -31,3 +31,6 @@ shopt -s histappend
 
 # ignore duplicate commands, ignore commands starting with a space
 export HISTCONTROL=erasedups
+
+#reminder of what to do
+cat /home/mas/TODO.leny
