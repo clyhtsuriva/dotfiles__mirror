@@ -100,4 +100,4 @@ set clipboard=unnamedplus
 	autocmd BufWritePost *dwmbar !killall dwmbar; setsid dwmbar &
 
 
-colo delek
+colo torte
