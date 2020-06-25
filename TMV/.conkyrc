@@ -93,7 +93,7 @@ conky.text = [[
 #
 # CURRENT TIME
 ${font Roboto:size=24}${color0}${alignc}${voffset -4}\
-${time %I:%M %p}\
+${time %H:%M:%S}\
 ${font}${color}
 #
 # CURRENT DATE
@@ -318,5 +318,5 @@ ${font}${color}
 #
 # COLOR PALETTE IMAGE
 # Note: Vertical offset controls the space UNDER the image.
-${voffset -25}${image ./Cache/colorpalette.png -p 13,870}\
+#${voffset -25}${image ./Cache/colorpalette.png -p 13,870}\
 ]]
