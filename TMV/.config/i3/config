@@ -351,3 +351,5 @@ mode "$mode_gaps_left" {
 }
 
 gaps inner 15
+
+bindsym $mod+Shift+N exec xterm -e "newsboat"

@@ -6,6 +6,17 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "~L
 "---VOID RELATED---"
 https://voidlinux.org/atom.xml
 
-"---GitHub stars---"
+"---GITHUB STARS---"
 https://github.com/rickellis/ConkyMatic/commits/master.atom
 https://github.com/mpolden/echoip/commits/master.atom
+
+"---REDDIT---"
+https://rss-bridge.snopyta.org/?action=display&bridge=Reddit&context=single&r=linux_gaming&format=Atom
+
+"---INSTAGRAM---"
+https://rss-bridge.snopyta.org/?action=display&bridge=Instagram&context=Username&u=hugodecrypte&media_type=all&direct_links=on&format=Atom
+
+"---MISC.---"
+https://rss-bridge.snopyta.org/?action=display&bridge=DansTonChat&format=Atom
+
+
