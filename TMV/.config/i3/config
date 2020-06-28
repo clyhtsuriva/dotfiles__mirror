@@ -353,3 +353,6 @@ mode "$mode_gaps_left" {
 gaps inner 15
 
 bindsym $mod+Shift+N exec xterm -e "newsboat"
+
+bindsym $mod+Shift+D exec notify-send -t 5000 -i /home/mas/Pictures/icons/discord.png "Opening" "<span color='#738ADB' font='26px'><b>Discord</b></span>" ; exec Discord
+

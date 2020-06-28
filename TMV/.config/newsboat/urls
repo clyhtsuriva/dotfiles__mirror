@@ -1,7 +1,7 @@
 "---LUKE SMITH'S CONTENT---"
 http://lukesmith.xyz/rss.xml
-https://notrelated.libsyn.com/rss
-https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "~Luke Smith (YouTube)"
+https://lukesmith.xyz/youtube.xml
+https://notrelated.xyz/rss
 
 "---VOID RELATED---"
 https://voidlinux.org/atom.xml
@@ -11,12 +11,35 @@ https://github.com/rickellis/ConkyMatic/commits/master.atom
 https://github.com/mpolden/echoip/commits/master.atom
 
 "---REDDIT---"
-https://rss-bridge.snopyta.org/?action=display&bridge=Reddit&context=single&r=linux_gaming&format=Atom
+https://rss-bridge-clyht.herokuapp.com/?action=display&bridge=Reddit&context=single&r=linux_gaming&format=Atom
+https://rss-bridge-clyht.herokuapp.com/?action=display&bridge=Reddit&context=single&r=voidlinux&format=Atom
+https://rss-bridge-clyht.herokuapp.com/?action=display&bridge=Reddit&context=single&r=nosleep&format=Atom
+https://rss-bridge-clyht.herokuapp.com/?action=display&bridge=Reddit&context=single&r=twosentencehorror&format=Atom
 
-"---INSTAGRAM---"
-https://rss-bridge.snopyta.org/?action=display&bridge=Instagram&context=Username&u=hugodecrypte&media_type=all&direct_links=on&format=Atom
+#"---INSTAGRAM---" URLs TO IMAGES ARE NOT WORKING
+#http://rss-bridge-clyht.herokuapp.com/?action=display&bridge=Instagram&context=Username&u=256595846&media_type=all&format=Atom
+#http://rss-bridge-clyht.herokuapp.com/?action=display&bridge=Instagram&context=Username&u=417792329&media_type=all&format=Atom
 
-"---MISC.---"
-https://rss-bridge.snopyta.org/?action=display&bridge=DansTonChat&format=Atom
+"---FRENCH SHITS---"
+https://rss-bridge-clyht.herokuapp.com/?action=display&bridge=DansTonChat&format=Atom
+https://rss-bridge-clyht.herokuapp.com/?action=display&bridge=Scmb&format=Atom
 
+"---SCHOOLS---"
+https://www.univ-paris13.fr/feed/
+https://www.esiea.fr/feed/
 
+"---YOUTUBE---"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCAcAnMF0OrCtUep3Y4M-ZPw
+https://www.youtube.com/feeds/videos.xml?channel_id=UCXuqSBlHAE6Xw-yeJA0Tunw
+https://www.youtube.com/feeds/videos.xml?channel_id=UCpFFItkfZz1qz5PpHpqzYBw
+https://www.youtube.com/feeds/videos.xml?channel_id=UCDK9qD5DAQML-pzrtA7A4oA
+https://www.youtube.com/feeds/videos.xml?channel_id=UCFYwikSUjLzDt0F_bu6Od4Q
+https://www.youtube.com/feeds/videos.xml?channel_id=UC9hHeywcPBnLglqnQRaNShQ
+https://www.youtube.com/feeds/videos.xml?channel_id=UC_yP2DpIgs5Y1uWC0T03Chw
+https://www.youtube.com/feeds/videos.xml?channel_id=UChV2oq_a-UZfJF-UiW0u-DQ
+https://www.youtube.com/feeds/videos.xml?channel_id=UCRhyS_ylPQ5GWBl1lK92ftA
+https://www.youtube.com/feeds/videos.xml?channel_id=UCYnvxJ-PKiGXo_tYXpWAC-w
+https://www.youtube.com/feeds/videos.xml?channel_id=UCm22FAXZMw1BaWeFszZxUKw
+https://www.youtube.com/feeds/videos.xml?channel_id=UCuBzVunAVbcwzMfQaJVacuw
+https://www.youtube.com/feeds/videos.xml?channel_id=UCwbV8cTR4yBgFdfa_BXV2OA
+https://www.youtube.com/feeds/videos.xml?channel_id=UCMQSwUNSnMOP4IRysfeg8EA
