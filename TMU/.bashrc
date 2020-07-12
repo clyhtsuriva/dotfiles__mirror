@@ -118,7 +118,6 @@ fi
 
 ###personal edits###
 
-alias cat='lolcat'
 
 #adding linuxbrew
 PATH='/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/bin:/home/linuxbrew/.linuxbrew/bin/:/home/linuxbrew/.linuxbrew/sbin'
