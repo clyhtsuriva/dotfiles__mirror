@@ -23,6 +23,8 @@ alias imperio='sudo user_imperio.py'
 export TERMINAL='xterm'
 alias ipconfig='curl ipconfig.io'
 alias cp='cp -v'
+alias mv='mv -v'
+alias mkdir='mkdir -pv'
 alias rmac='rmac.py'
 export BAT_THEME="Dracula"
 

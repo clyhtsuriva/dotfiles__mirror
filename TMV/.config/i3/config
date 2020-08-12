@@ -197,8 +197,8 @@ bar {
 ###PERSONAL EDITS###
 
 bindsym $mod+Shift+W exec notify-send -t 5000 -i /home/mas/Pictures/icons/firefox.png "Opening" "<span color='#ff6600' font='26px'><b>firefox</b></span>" ; exec firefox
-bindsym $mod+Shift+X exec sudo poweroff
-bindsym $mod+Shift+BackSpace exec sudo reboot
+bindsym $mod+Shift+X exec "i3-nagbar -t warning -f fixed -m 'You pressed the shutting shortcut. Do you really eant to shut you computer?' -B 'Yes, shut it.' 'sudo poweroff'"
+bindsym $mod+Shift+BackSpace exec "i3-nagbar -t warning -f fixed -m 'You pressed the restarting shortcut. Do you really eant to restart you computer?' -B 'Yes, restart it.' 'sudo reboot'"
 bindsym $mod+Shift+T exec notify-send -t 5000 -i /home/mas/Pictures/icons/tor.png "Opening" "<span color='#40ff00' font='26px'><b>tor</b></span>" ; exec tor
 
 
@@ -356,3 +356,9 @@ bindsym $mod+Shift+N exec xterm -e "newsboat"
 
 bindsym $mod+Shift+D exec notify-send -t 5000 -i /home/mas/Pictures/icons/discord.png "Opening" "<span color='#738ADB' font='26px'><b>Discord</b></span>" ; exec Discord
 
+# Media Player Controls
+#bindsym ISO_Level3_Shift+F7
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+#bindsym XF86AudioPrev exec playerctl previous
