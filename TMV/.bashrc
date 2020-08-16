@@ -8,24 +8,9 @@ export PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 0)\]\t \[$(tput s
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 
 ###PERSONAL EDITS
-alias cat='bat'
-alias bat_pow='sudo upower -i /org/freedesktop/UPower/devices/battery_BAT0'
-alias la='ls -A'
-alias l='ls'
-alias ll='ls -l'
-alias display='sxiv'
-alias xbacklight='sudo xbacklight'
 export WINDOWS='/mnt/windows'
 export PATH=$PATH:/home/mas/py/
-alias nox='user_nox.py'
-alias incendio='user_incendio.py'
-alias imperio='sudo user_imperio.py'
 export TERMINAL='xterm'
-alias ipconfig='curl ipconfig.io'
-alias cp='cp -v'
-alias mv='mv -v'
-alias mkdir='mkdir -pv'
-alias rmac='rmac.py'
 export BAT_THEME="Dracula"
 
 # append to the history instead of overwriting (good for multiple connections)

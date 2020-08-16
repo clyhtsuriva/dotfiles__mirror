@@ -1,5 +1,6 @@
 #!/bin/sh
-mpv="mpv --input-ipc-server=/tmp/mpvsoc$(date +%s)" \
+
+alias mpv="mpv --input-ipc-server=/tmp/mpvsoc$(date +%s)" \
 	xi="sudo xbps-install" \
 	xr="sudo xbps-remove" \
 	xq="xbps-query" \
@@ -7,6 +8,21 @@ mpv="mpv --input-ipc-server=/tmp/mpvsoc$(date +%s)" \
 	ls="ls -hN --color=auto --group-directories-first" \
 	grep="grep --color=auto" \
 	diff="diff --color=auto" \
-	ffmpeg="ffmpeg -hide_banner"
+	ffmpeg="ffmpeg -hide_banner" \
+	cat='bat' \
+	bat_pow='sudo upower -i /org/freedesktop/UPower/devices/battery_BAT0' \
+	la='ls -A' \
+	l='ls' \
+	ll='ls -l' \
+	display='sxiv' \
+	xbacklight='sudo xbacklight' \
+	nox='user_nox.py' \
+	incendio='user_incendio.py' \
+	imperio='sudo user_imperio.py' \
+	ipconfig='curl ipconfig.io' \
+	cp='cp -v' \
+	mv='mv -v' \
+	mkdir='mkdir -pv' \
+	rmac='rmac.py'
 
 command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d" # Use neovim for vim if present.
