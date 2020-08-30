@@ -23,6 +23,9 @@ alias mpv="mpv --input-ipc-server=/tmp/mpvsoc$(date +%s)" \
 	cp='cp -v' \
 	mv='mv -v' \
 	mkdir='mkdir -pv' \
-	rmac='rmac.py'
+	rm='rm -v' \
+	rmac='rmac.py' \
+	vv='cd ~/Videos && ls -A *' \
+	pp='cd ~/Pictures && ls -A *'
 
 command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d" # Use neovim for vim if present.
