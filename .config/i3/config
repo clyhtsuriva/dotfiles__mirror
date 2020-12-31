@@ -196,11 +196,11 @@ bar {
 
 ###PERSONAL EDITS###
 
-bindsym $mod+Shift+W exec notify-send -t 5000 -i /home/mas/Pictures/icons/firefox.png "Opening" "<span color='#ff6600' font='26px'><b>firefox</b></span>" ; exec firefox
+bindsym $mod+Shift+W exec notify-send -t 5000 -i /usr/share/icons/hicolor/256x256/apps/firefox.png "Opening" "<span color='#ff6600' font='26px'><b>firefox</b></span>" ; exec firefox
 bindsym $mod+Shift+X exec "i3-nagbar -t warning -f fixed -m 'You pressed the shutting shortcut. Do you really eant to shut you computer?' -B 'Yes, shut it.' 'sudo poweroff'"
 bindsym $mod+Shift+BackSpace exec "i3-nagbar -t warning -f fixed -m 'You pressed the restarting shortcut. Do you really eant to restart you computer?' -B 'Yes, restart it.' 'sudo reboot'"
-bindsym $mod+Shift+T exec notify-send -t 5000 -i /home/mas/Pictures/icons/tor.png "Opening" "<span color='#40ff00' font='26px'><b>tor</b></span>" ; exec tor
-bindsym $mod+Shift+P exec notify-send -t 5000 -i /home/mas/Pictures/icons/firefox.png "Opening" "<span color='#ff6600' font='26px'><b>firefox</b></span>" ; exec firefox --private-window
+bindsym $mod+Shift+T exec notify-send -t 5000 -i /home/mas/Pictures/icons/teams.png "Opening" "<span color='purple' font='26px'><b>Teams</b></span>" ; exec teams
+bindsym $mod+Shift+P exec passmenu
 
 
 exec --no-startup-id feh --bg-scale /home/mas/Pictures/retrowave-pyramid.png
@@ -365,7 +365,14 @@ bindsym XF86AudioNext exec playerctl next
 
 #screenshot
 bindsym Print exec notify-send -t 5000 -i /home/mas/Pictures/icons/screenshot.png "Launching" "<span color='cyan' font='26px'><b>scrot</b></span>" ; exec scrot --silent --exec 'mv $f ~/Pictures && sxiv ~/Pictures/$f'
-bindsym $mod+Shift+C exec notify-send -t 5000 -i /home/mas/Pictures/icons/chromium.png "Opening" "<span color='#5D7FD2' font='26px'><b>chromium</b></span>" ; exec chromium
+bindsym $mod+Shift+C exec notify-send -t 5000 -i /usr/share/icons/hicolor/256x256/apps/chromium.png "Opening" "<span color='#5D7FD2' font='26px'><b>chromium</b></span>" ; exec chromium
+
 
 bindsym $mod+F10 exec dmenumount
 bindsym $mod+F11 exec dmenuumount
+
+bindsym $mod+Shift+V exec notify-send -t 5000 -i /usr/share/icons/hicolor/128x128/mimetypes/virtualbox.png "Launching" "<span color='blue' font='26px'><b>VirtualBox</b></span>" ; exec VirtualBox
+bindsym $mod+Shift+M exec notify-send -t 5000 -i /usr/share/icons/hicolor/256x256/apps/thunderbird.png "Launching" "<span color='blue' font='26px'><b>Thunderbird</b></span>" ; exec thunderbird
+bindsym $mod+Shift+U exec setxkbmap us && exec notify-send -t 5000 "US xkbmap"
+bindsym $mod+Shift+F exec setxkbmap fr && exec notify-send -t 5000 "FR xkbmap"
+bindsym $mod+Shift+I exec networkmanager_dmenu
