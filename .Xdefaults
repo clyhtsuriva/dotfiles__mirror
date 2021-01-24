@@ -1,0 +1,7 @@
+xterm*Background:	black
+xterm*Foreground:	white
+xterm*cursorColor:	yellow
+xterm*pointerShape:	xterm
+xterm*pointerColor:	magenta
+xterm*faceSize: 12
+xterm*faceName: wts11
