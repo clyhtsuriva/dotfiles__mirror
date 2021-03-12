@@ -176,7 +176,6 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-#personal colors
 bar {
 	colors {
 		background #040217
@@ -194,17 +193,19 @@ bar {
         status_command i3status
 }
 
-###PERSONAL EDITS###
-
+# Firefox - (W)eb browser
 bindsym $mod+Shift+W exec notify-send -t 5000 -i /usr/share/icons/hicolor/256x256/apps/firefox.png "Opening" "<span color='#ff6600' font='26px'><b>firefox</b></span>" ; exec firefox
+# Power off - X
 bindsym $mod+Shift+X exec "i3-nagbar -t warning -f fixed -m 'You pressed the shutting shortcut. Do you really eant to shut you computer?' -B 'Yes, shut it.' 'sudo poweroff'"
+# Reboot - BackSpace
 bindsym $mod+Shift+BackSpace exec "i3-nagbar -t warning -f fixed -m 'You pressed the restarting shortcut. Do you really eant to restart you computer?' -B 'Yes, restart it.' 'sudo reboot'"
+# (T)eams
 bindsym $mod+Shift+T exec notify-send -t 5000 -i /home/mas/Pictures/icons/teams.png "Opening" "<span color='purple' font='26px'><b>Teams</b></span>" ; exec teams
+#  (P)assword manager
 bindsym $mod+Shift+P exec passmenu
 
-
+# Set the bg wallpaper
 exec --no-startup-id feh --bg-scale /home/mas/Pictures/retrowave-pyramid.png
-#exec --no-startup-id nox $(cat /home/mas/.config/nox/config)
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 1 ; exec notify-send -t 500 "Brightness : $(xbacklight -get)" # increase screen brightness
@@ -219,12 +220,11 @@ client.placeholder      #20202D #20202D #FFFFFF #0C1746   #3C3C54
 
 client.background       #D52C70
 
-#suspend and hibernate
+# suspend and hibernate
 bindsym $mod+Shift+S exec "i3-nagbar -t warning -f fixed -m 'You pressed the suspending shortcut. Do you really want to suspend your computer?' -B 'Yes, suspend it.' 'sudo zzz'"
-
 bindsym $mod+Shift+Delete exec "i3-nagbar -t warning -f fixed -m 'You pressed the hibernating shortcut. Do you really want to put your computer to sleep?' -B 'Yes, do it.' 'sudo ZZZ'"
 
-#a bit of trolling
+# What happens when we hit the power button
 bindsym XF86PowerOff exec xcowsay $(fortune -os)
 
 ######GAPS######
@@ -349,11 +349,13 @@ mode "$mode_gaps_left" {
         bindsym Escape mode "default"
 }
 
-gaps inner 15
-######
+gaps inner 10
+###GAPS###
 
+# (N)ewsboat
 bindsym $mod+Shift+N exec xterm -e "newsboat"
 
+# (D)iscord
 bindsym $mod+Shift+D exec notify-send -t 5000 -i /home/mas/Pictures/icons/discord.png "Opening" "<span color='#738ADB' font='26px'><b>Discord</b></span>" ; exec Discord
 
 # Media Player Controls
@@ -363,16 +365,32 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 #bindsym XF86AudioPrev exec playerctl previous
 
-#screenshot
+# Screenshot with scrot
 bindsym Print exec notify-send -t 5000 -i /home/mas/Pictures/icons/screenshot.png "Launching" "<span color='cyan' font='26px'><b>scrot</b></span>" ; exec scrot --silent --exec 'mv $f ~/Pictures && sxiv ~/Pictures/$f'
+
+# (C)hromium
 bindsym $mod+Shift+C exec notify-send -t 5000 -i /usr/share/icons/hicolor/256x256/apps/chromium.png "Opening" "<span color='#5D7FD2' font='26px'><b>chromium</b></span>" ; exec chromium
 
-
+# Mount/Umount on the drives - F10/F11
 bindsym $mod+F10 exec dmenumount
 bindsym $mod+F11 exec dmenuumount
 
+# (V)irtualBox
 bindsym $mod+Shift+V exec notify-send -t 5000 -i /usr/share/icons/hicolor/128x128/mimetypes/virtualbox.png "Launching" "<span color='blue' font='26px'><b>VirtualBox</b></span>" ; exec VirtualBox
+# Thunderbird - (M)ail
 bindsym $mod+Shift+M exec notify-send -t 5000 -i /usr/share/icons/hicolor/256x256/apps/thunderbird.png "Launching" "<span color='blue' font='26px'><b>Thunderbird</b></span>" ; exec thunderbird
+
+# US and FR keyboard mapping - (U)S/(F)R
 bindsym $mod+Shift+U exec setxkbmap us && exec notify-send -t 5000 "US xkbmap"
 bindsym $mod+Shift+F exec setxkbmap fr && exec notify-send -t 5000 "FR xkbmap"
+
+# Network manager - (I)nternet
 bindsym $mod+Shift+I exec networkmanager_dmenu
+
+#Krita - F1
+bindsym $mod+Shift+F1 exec notify-send -t 5000 -i /usr/share/icons/hicolor/1024x1024/apps/krita.png "Lauching" "<span color='pink' font='26px'><b>Krita</b></span>" && exec krita
+
+#remove the header of the window
+default_border pixel 2
+
+bindsym $mod+Shift+F10 exec i3-msg exit

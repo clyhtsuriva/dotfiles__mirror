@@ -5,3 +5,4 @@ xterm*pointerShape:	xterm
 xterm*pointerColor:	magenta
 xterm*faceSize: 12
 xterm*faceName: wts11
+Sxiv.background: #000000

@@ -2,8 +2,7 @@
 
 # Profile file. Runs on login. Environmental variables are set here.
 
-# Adds `~/.local/bin` to $PATH
-export PATH="$PATH:$HOME/.local/bin/:$HOME/py/"
+export PATH="$PATH:$HOME/.local/bin:$HOME/py:$HOME/.local/usr/local/bin:$HOME/.local/usr/bin"
 
 # Default programs:
 export EDITOR="nvim"

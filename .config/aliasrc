@@ -1,10 +1,10 @@
 #!/bin/sh
 
-alias mpv="mpv --input-ipc-server=/tmp/mpvsoc$(date +%s)" \
+alias mpv='mpv --input-ipc-server=/tmp/mpvsoc$(date +%s)' \
 	xi="sudo xbps-install" \
 	xr="sudo xbps-remove" \
 	xq="xbps-query" \
-	v="$EDITOR" \
+	v='$EDITOR' \
 	ls="ls -hN --color=auto --group-directories-first" \
 	grep="grep --color=auto" \
 	diff="diff --color=auto" \
@@ -12,7 +12,7 @@ alias mpv="mpv --input-ipc-server=/tmp/mpvsoc$(date +%s)" \
 	cat='bat' \
 	bat_pow='sudo upower -i /org/freedesktop/UPower/devices/battery_BAT0' \
 	la='ls -A' \
-	l='ls' \
+	l='ls -1' \
 	ll='ls -lt' \
 	display='sxiv' \
 	xbacklight='sudo xbacklight' \
@@ -27,6 +27,7 @@ alias mpv="mpv --input-ipc-server=/tmp/mpvsoc$(date +%s)" \
 	rmac='rmac.py' \
 	vv='cd ~/Videos && ls -A *' \
 	pp='cd ~/Pictures && ls -A *' \
-	mm='cd ~/Music && ls -A *'
+	mm='cd ~/Music && ls -A !(data-music)' \
+	ipa='ip -c -h -s a'
 
 command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d" # Use neovim for vim if present.
