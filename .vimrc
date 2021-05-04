@@ -29,7 +29,6 @@ set clipboard=unnamedplus
 	autocmd BufWritePost *Xresources,*Xdefaults !xrdb %
 
 
-	colorscheme delek
 
 call plug#begin('~/.vim/plugged')
 
@@ -40,6 +39,11 @@ Plug 'SirVer/ultisnips'
 Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
 Plug 'w0rp/ale'
 Plug 'ctrlpvim/ctrlp.vim'
+
+" Theme
+Plug 'dracula/vim', { 'as': 'dracula' }
+" Bottom line
+Plug 'itchyny/lightline.vim'
 
 call plug#end()
 "Ctrlp Settings {{{
@@ -97,13 +101,13 @@ let g:ale_linters = {
 
 let g:deoplete#enable_at_startup = 1
 
-let g:deoplete#auto_complete_start_length = 2
-let g:deoplete#sources = {}
-let g:deoplete#sources._=['buffer', 'ultisnips', 'file', 'dictionary']
-let g:deoplete#sources.javascript = ['tern', 'omni', 'file', 'buffer', 'ultisnips']
+let g:deoplete#custom#auto_complete_start_length = 2
+let g:deoplete#custom#sources = {}
+let g:deoplete#custom#sources._=['buffer', 'ultisnips', 'file', 'dictionary']
+let g:deoplete#custom#sources.javascript = ['tern', 'omni', 'file', 'buffer', 'ultisnips']
 
 " Use smartcase.
-let g:deoplete#enable_smart_case = 1
+let g:deoplete#custom#enable_smart_case = 1
 
 
 "set completeopt-=preview
@@ -141,3 +145,10 @@ set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C.%#
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
 autocmd FileType java JCEnable
 " }}}
+
+	colorscheme dracula
+
+let g:lightline = {
+      \ 'colorscheme': 'dracula',
+      \ }
+
