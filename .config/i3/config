@@ -180,7 +180,7 @@ bar {
 	colors {
 		background #040217
 		statusline #972e73
-	    	separator  #231C51
+	    	separator  #C9A6C9
 
 		focused_workspace  #c583b6   #040217      #d52c70
 		active_workspace   #6c2d7a   #000000      #c583b6
@@ -393,4 +393,12 @@ bindsym $mod+Shift+F1 exec notify-send -t 5000 -i /usr/share/icons/hicolor/1024x
 #remove the header of the window
 default_border pixel 2
 
+#Urgency i3 opt out option
 bindsym $mod+Shift+F10 exec i3-msg exit
+
+#Android Studio - F2
+bindsym $mod+Shift+F2 exec notify-send -t 5000 -i /home/mas/Pictures/icons/android_studio.png "Lauching" "<span color='#004d00' font='26px'><b>Android Studio</b></span>" && exec studio
+#R Studio - F3
+bindsym $mod+Shift+F3 exec notify-send -t 5000 -i /home/mas/Pictures/icons/r_studio.png "Lauching" "<span color='#63aaed' font='26px'><b>R Studio</b></span>" && exec rstudio
+#Visual Code Studio - F4
+bindsym $mod+Shift+F4 exec notify-send -t 5000 -i /home/mas/Pictures/icons/vscode.png "Lauching" "<span color='#3faaf2' font='26px'><b>VSCode</b></span>" && exec code
