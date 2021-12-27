@@ -202,7 +202,7 @@ bindsym $mod+Shift+BackSpace exec "i3-nagbar -t warning -f fixed -m 'You pressed
 # (T)eams
 bindsym $mod+Shift+T exec notify-send -t 5000 -i /home/mas/Pictures/icons/teams.png "Opening" "<span color='purple' font='26px'><b>Teams</b></span>" ; exec teams
 #  (P)assword manager
-bindsym $mod+Shift+P exec passmenu
+#bindsym $mod+Shift+P exec passmenu
 
 # Set the bg wallpaper
 exec --no-startup-id feh --bg-scale /home/mas/Pictures/retrowave-pyramid.png
@@ -212,7 +212,7 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 1 ; exec notify-send -t 500 "Br
 bindsym XF86MonBrightnessDown exec xbacklight -dec 1 ; exec notify-send -t 500 "Brightness : $(xbacklight -get)" # decrease screen brightness
 
 # class                 border	backgr.	text	indicator child_border
-client.focused          #c583b6 #040217 #d52c70 #F54A94   #814db3
+client.focused          #c583b6 #040217 #d52c70 #F54A94   #c583b6
 client.focused_inactive #6C2D7A #000000 #c583b6 #0C1746   #3C3C54
 client.unfocused        #6C2D7A #000000 #6C2D7A #0C1746   #3C3C54
 client.urgent           #F54A94 #20202D #FFFFFF #0C1746   #F54A94

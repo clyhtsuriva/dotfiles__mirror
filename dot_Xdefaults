@@ -1,13 +1,12 @@
 xterm*cursorColor:	yellow
 xterm*pointerShape:	xterm
 xterm*pointerColor:	magenta
-xterm*faceSize: 12
-xterm*faceName: wts11
+xterm*faceSize:		12
+xterm*faceName: 	wts11
 Sxiv.background: #000000
 
-! Dracula Xresources palette
-*.foreground: #F8F8F2
-*.background: #282A36
+*.foreground: #FF70FF
+*.background: #040217
 *.color0:     #000000
 *.color8:     #4D4D4D
 *.color1:     #FF5555
