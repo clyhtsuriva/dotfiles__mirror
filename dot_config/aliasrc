@@ -1,0 +1,26 @@
+#!/bin/sh
+
+alias mpv='mpv --input-ipc-server=/tmp/mpvsoc$(date +%s)' \
+	xi="sudo xbps-install" \
+	xr="sudo xbps-remove" \
+	xq="xbps-query" \
+	v='$EDITOR' \
+	ls="ls -hN --color=auto --group-directories-first" \
+	grep="grep --color=auto" \
+	diff="diff --color=auto" \
+	ffmpeg="ffmpeg -hide_banner" \
+	cat='bat' \
+	la='ls -A' \
+	l='ls -1' \
+	ll='ls -lt' \
+	display='sxiv' \
+	xbacklight='sudo xbacklight' \
+	ipconfig='curl ipconfig.io' \
+	cp='cp -v' \
+	mv='mv -v' \
+	mkdir='mkdir -pv' \
+	rm='rm -v' \
+	vv='cd ~/Videos && ls -A *' \
+	pp='cd ~/Pictures && ls -A *' \
+	mm='cd ~/Music && ls -A !(data-music)' \
+	ipa='ip -c -h -s a'

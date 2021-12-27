@@ -1,9 +1,0 @@
-# Rime user dictionary
-#@/db_name	terra_pinyin.userdb
-#@/db_type	userdb
-#@/rime_version	1.5.3
-#@/tick	6
-#@/user_id	0473e284-5ff2-42f2-91ba-319c9ef261b2
-chan3 pin3 	產品	c=1 d=1 t=1
-ma5 	嗎	c=2 d=1.99005 t=6
-ni3 hao3 	你好	c=3 d=2.97516 t=5
