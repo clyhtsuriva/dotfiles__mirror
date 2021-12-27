@@ -214,7 +214,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 1 ; exec notify-send -t 500 "
 # class                 border	backgr.	text	indicator child_border
 client.focused          #c583b6 #040217 #d52c70 #F54A94   #c583b6
 client.focused_inactive #6C2D7A #000000 #c583b6 #0C1746   #3C3C54
-client.unfocused        #6C2D7A #000000 #6C2D7A #0C1746   #3C3C54
+client.unfocused        #6C2D7A #000000 #6C2D7A #0C1746   #6c2d7a
 client.urgent           #F54A94 #20202D #FFFFFF #0C1746   #F54A94
 client.placeholder      #20202D #20202D #FFFFFF #0C1746   #3C3C54
 
