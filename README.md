@@ -1,6 +1,3 @@
 # dotfiles
 
-This repository contains my dotfiles and other configuration files.
-Feel free to use them for you own rice.
-
-## Will be updated soon thanks to the chezmoi tool.
+dotfiles that I use every day on my laptop running Void Linux
