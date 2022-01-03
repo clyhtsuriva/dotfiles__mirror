@@ -1,9 +1,10 @@
-xterm*cursorColor:	yellow
+xterm*cursorColor:	#C9A6C9
 xterm*pointerShape:	xterm
-xterm*pointerColor:	magenta
+xterm*pointerColor:	#D52C70
 xterm*faceSize:		12
 xterm*faceName: 	wts11
-Sxiv.background: #000000
+
+Sxiv.background: #040217
 
 *.foreground: #FF70FF
 *.background: #040217
