@@ -2,3 +2,9 @@
     background = "#040217"
     foreground = "#D52C70"
     frame_color = "#c583b6"
+
+[global]
+    follow = keyboard
+    offset = 20x20
+    font = 12
+    format = "<b>%s</b>\n%b"
