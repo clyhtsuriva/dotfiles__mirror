@@ -10,3 +10,55 @@ map K zoom in
 map J zoom out
 map i recolor
 map p print
+
+###
+
+set window-title-basename "true"
+set selection-clipboard "clipboard"
+
+set notification-error-bg       "#ff5555" # Red
+set notification-error-fg       "#C9A6C9" # Foreground
+set notification-warning-bg     "#ffb86c" # Orange
+set notification-warning-fg     "#44475a" # Selection
+set notification-bg             "#040217" # Background
+set notification-fg             "#C9A6C9" # Foreground
+
+set completion-bg               "#040217" # Background
+set completion-fg               "#6272a4" # Comment
+set completion-group-bg         "#040217" # Background
+set completion-group-fg         "#6272a4" # Comment
+set completion-highlight-bg     "#44475a" # Selection
+set completion-highlight-fg     "#C9A6C9" # Foreground
+
+set index-bg                    "#040217" # Background
+set index-fg                    "#C9A6C9" # Foreground
+set index-active-bg             "#44475a" # Current Line
+set index-active-fg             "#C9A6C9" # Foreground
+
+set inputbar-bg                 "#040217" # Background
+set inputbar-fg                 "#C9A6C9" # Foreground
+set statusbar-bg                "#040217" # Background
+set statusbar-fg                "#C9A6C9" # Foreground
+
+set highlight-color             "#ffb86c" # Orange
+set highlight-active-color      "#ff79c6" # Pink
+
+set default-bg                  "#040217" # Background
+set default-fg                  "#C9A6C9" # Foreground
+
+set render-loading              true
+set render-loading-fg           "#040217" # Background
+set render-loading-bg           "#C9A6C9" # Foreground
+
+#
+# Recolor mode settings
+#
+
+set recolor-lightcolor          "#040217" # Background
+set recolor-darkcolor           "#C9A6C9" # Foreground
+
+#
+# Startup options
+#
+set adjust-open width
+set recolor true
