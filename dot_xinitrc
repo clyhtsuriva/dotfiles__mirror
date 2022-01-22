@@ -8,12 +8,14 @@
 # and so they are needed there. To prevent doubling up commands, I source them
 # here with the line below.
 
-[ -f ~/.xprofile ] && . ~/.xprofile
+[ -f ~/.xprofile ] && . "$HOME"/.xprofile
 
 
 ###PERSONAL EDIT###
-exec i3
+i3
 
 xset s off
 xset -dpms
 xset s noblank
+xset r rate 300 50
+setxkbmap -option caps:super

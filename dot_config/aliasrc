@@ -13,12 +13,11 @@ alias mpv='mpv --input-ipc-server=/tmp/mpvsoc$(date +%s)' \
 	la='ls -A' \
 	l='ls -1' \
 	ll='ls -lt' \
-	display='sxiv' \
 	xbacklight='sudo xbacklight' \
-	ipconfig='curl ipconfig.io' \
+	ipconfig='curl -sS ipconfig.io' \
 	cp='cp -v' \
 	mv='mv -v' \
-	mkdir='mkdir -pv' \
+	mkdir='mkdir -v' \
 	rm='rm -v' \
 	vv='cd ~/Videos && ls -A *' \
 	pp='cd ~/Pictures && ls -A *' \
