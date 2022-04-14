@@ -35,6 +35,9 @@ Plug 'ctrlpvim/ctrlp.vim'
 " Bottom line
 Plug 'itchyny/lightline.vim'
 
+" color highlighter - needs golang
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+
 call plug#end()
 "Ctrlp Settings {{{
 
@@ -135,3 +138,9 @@ set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C.%#
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
 autocmd FileType java JCEnable
 " }}}
+
+" color highliter settings [
+set termguicolors
+let g:Hexokinase_highlighters = ['virtual']
+let g:Hexokinase_optInPatterns = 'full_hex,rgb,rgba,hsl,hsla'
+" ]
