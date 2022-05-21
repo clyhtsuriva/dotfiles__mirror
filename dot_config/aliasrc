@@ -22,4 +22,5 @@ alias mpv='mpv --input-ipc-server=/tmp/mpvsoc$(date +%s)' \
 	vv='cd ~/Videos && ls -A *' \
 	pp='cd ~/Pictures && ls -A *' \
 	mm='cd ~/Music && ls -A !(data-music)' \
-	ipa='ip -c -h -s a'
+	ipa='ip -c -h -s a' \
+	wget='wget --hsts-file="$XDG_DATA_HOME"/wget-hsts'

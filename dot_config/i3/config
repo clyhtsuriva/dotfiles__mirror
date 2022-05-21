@@ -221,7 +221,7 @@ client.placeholder      #20202D #20202D #FFFFFF #0C1746   #3C3C54
 client.background       #D52C70
 
 # suspend and hibernate
-bindsym $mod+Shift+S exec "i3-nagbar -t warning -f fixed -m 'You pressed the suspending shortcut. Do you really want to suspend your computer?' -B 'Yes, suspend it.' 'i3lock --image="$HOME/Pictures/superhot_wpp.png" && sudo /bin/zzz'"
+bindsym $mod+Shift+S exec "i3-nagbar -t warning -f fixed -m 'You pressed the suspending shortcut. Do you really want to suspend your computer?' -B 'Yes, suspend it.' 'i3lock --image=$HOME/Pictures/superhot_wpp.png && sudo /bin/zzz'"
 bindsym $mod+Shift+Delete exec "i3-nagbar -t warning -f fixed -m 'You pressed the hibernating shortcut. Do you really want to put your computer to sleep?' -B 'Yes, do it.' 'sudo /bin/ZZZ'"
 
 # What happens when we hit the power button
