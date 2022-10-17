@@ -352,9 +352,6 @@ mode "$mode_gaps_left" {
 gaps inner 10
 ###GAPS###
 
-# (N)ewsboat
-bindsym $mod+Shift+N exec $TERMINAL -e "newsboat"
-
 # (D)iscord
 bindsym $mod+Shift+D exec notify-send -t 5000 -i /home/mas/Pictures/icons/discord.png "Opening" "<span color='#738ADB' font='26px'><b>Discord</b></span>" ; exec Discord
 
@@ -398,6 +395,8 @@ bindsym $mod+Shift+F10 exec i3-msg exit
 
 #Android Studio - F2
 bindsym $mod+Shift+F2 exec notify-send -t 5000 -i /home/mas/Pictures/icons/android_studio.png "Lauching" "<span color='#004d00' font='26px'><b>Android Studio</b></span>" && exec studio
+
+exec_always --no-startup-id /usr/bin/i3wsr
 
 #(L)ock
 bindsym $mod+Ctrl+l exec i3lock --show-failed-attempts --image="$HOME/Pictures/superhot_wpp.png"
