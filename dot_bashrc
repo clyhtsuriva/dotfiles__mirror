@@ -16,12 +16,9 @@ export XDG_STATE_HOME="$HOME"/.local/state
 export XDG_CACHE_HOME="$HOME"/.cache
 export ANSIBLE_HOME="$XDG_DATA_HOME"/ansible
 export GNUPGHOME="$XDG_DATA_HOME"/gnupg
-export GRADLE_USER_HOME="$XDG_DATA_HOME"/gradle
-export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 export ANDROID_HOME="$XDG_DATA_HOME"/android
 export HISTFILE="$XDG_STATE_HOME"/bash/history
 export LESSHISTFILE="$XDG_CACHE_HOME"/less/history
-export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
 export PYTHONSTARTUP="$XDG_CONFIG_HOME"/python/pythonrc
 
 PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\w\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]" ; export PS1
@@ -29,3 +26,4 @@ PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 
 figlet "$0" | lolcat -f -r -l -v 1 -h 1
+. "$HOME/.cargo/env"
