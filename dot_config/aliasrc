@@ -23,4 +23,7 @@ alias mpv='mpv --input-ipc-server=/tmp/mpvsoc$(date +%s)' \
 	pp='cd ~/Pictures && ls -A *' \
 	mm='cd ~/Music && ls -A !(data-music)' \
 	ipa='ip -c -h -s a' \
-	wget='wget --hsts-file="$XDG_DATA_HOME"/wget-hsts'
+	wget='wget --hsts-file="$XDG_DATA_HOME"/wget-hsts' \
+	dls='sudo docker container ls' \
+	dlsa='sudo docker container ls -a' \
+	dstopall='sudo docker container stop $(sudo docker container ls -aq)'
