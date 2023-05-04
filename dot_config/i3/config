@@ -200,12 +200,11 @@ bindsym $mod+Shift+X exec "i3-nagbar -t warning -f fixed -m 'You pressed the shu
 # Reboot - BackSpace
 bindsym $mod+Shift+BackSpace exec "i3-nagbar -t warning -f fixed -m 'You pressed the restarting shortcut. Do you really eant to restart you computer?' -B 'Yes, restart it.' 'sudo /bin/reboot'"
 # (T)eams
-bindsym $mod+Shift+T exec notify-send -t 5000 -i /home/mas/Pictures/icons/teams.png "Opening" "<span color='purple' font='26px'><b>Teams</b></span>" ; exec teams
 #  (P)assword manager
 #bindsym $mod+Shift+P exec passmenu
 
 # Set the bg wallpaper
-exec --no-startup-id feh --bg-scale /home/mas/Pictures/retrowave-pyramid.png
+exec --no-startup-id feh --bg-scale /home/mas/Pictures/you_wouldnt_steal_a_wallpaper.png
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 1 ; exec notify-send -t 500 "Brightness : $(xbacklight -get)" # increase screen brightness
