@@ -6,6 +6,7 @@ xterm*pointerColor:	#D52C70
 xterm*faceSize:		12
 xterm*faceName: 	wts11
 
+
 *.foreground: #FF70FF
 *.background: #040217
 *.color0:     #000000
@@ -24,6 +25,7 @@ xterm*faceName: 	wts11
 *.color14:    #9AEDFE
 *.color7:     #BFBFBF
 *.color15:    #E6E6E6
+
 
 *.alpha: 0.8
 *.font: monospace:size=11

@@ -204,7 +204,7 @@ bindsym $mod+Shift+BackSpace exec "i3-nagbar -t warning -f fixed -m 'You pressed
 #bindsym $mod+Shift+P exec passmenu
 
 # Set the bg wallpaper
-exec --no-startup-id feh --bg-scale /home/mas/Pictures/you_wouldnt_steal_a_wallpaper.png
+exec --no-startup-id feh --bg-scale /home/mas/Pictures/retrowave-pyramid.png
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 1 ; exec notify-send -t 500 "Brightness : $(xbacklight -get)" # increase screen brightness
@@ -224,7 +224,7 @@ bindsym $mod+Shift+S exec "i3-nagbar -t warning -f fixed -m 'You pressed the sus
 bindsym $mod+Shift+Delete exec "i3-nagbar -t warning -f fixed -m 'You pressed the hibernating shortcut. Do you really want to put your computer to sleep?' -B 'Yes, do it.' 'sudo /bin/ZZZ'"
 
 # What happens when we hit the power button
-bindsym XF86PowerOff exec xcowsay $(fortune -s)
+bindsym XF86PowerOff exec xcowsay "$(fortune -s)"
 
 ######GAPS######
 set $mode_gaps Gaps: (o)uter, (i)nner, (h)orizontal, (v)ertical, (t)op, (r)ight, (b)ottom, (l)eft
