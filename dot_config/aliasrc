@@ -24,3 +24,4 @@ alias mpv='mpv --input-ipc-server=/tmp/mpvsoc$(date +%s)' \
 	mm='cd ~/Music && ls -A !(data-music)' \
 	ipa='ip -c a' \
 	wget='wget --hsts-file="$XDG_DATA_HOME"/wget-hsts' \
+	scd='echo "YOU USED SCD, BE CAREFUL" ; cd' \

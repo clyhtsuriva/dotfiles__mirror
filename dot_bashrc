@@ -30,5 +30,7 @@ PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\
 
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 
-figlet "$0" | lolcat -f -r -l -v 1 -h 1
+# using echo because -bash, for exemple, would break figlet
+echo "$0" | figlet | lolcat -f -r -l -v 1 -h 1
+
 . "$HOME/.cargo/env"
