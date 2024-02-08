@@ -196,7 +196,7 @@ bar {
 # Firefox - (W)eb browser
 bindsym $mod+Shift+W exec notify-send -t 5000 -i /usr/share/icons/hicolor/256x256/apps/firefox.png "Opening" "<span color='#ff6600' font='26px'><b>firefox</b></span>" ; exec firefox
 # Power off - X
-bindsym $mod+Shift+X exec "i3-nagbar -t warning -f fixed -m 'You pressed the shutting shortcut. Do you really eant to shut you computer?' -B 'Yes, shut it.' 'sudo /bin/poweroff'"
+bindsym $mod+Shift+X exec "i3-nagbar -t error -f fixed -m 'You pressed the shutting shortcut. Do you really eant to shut you computer?' -B 'Yes, shut it.' 'sudo /bin/poweroff'"
 # Reboot - BackSpace
 bindsym $mod+Shift+BackSpace exec "i3-nagbar -t warning -f fixed -m 'You pressed the restarting shortcut. Do you really eant to restart you computer?' -B 'Yes, restart it.' 'sudo /bin/reboot'"
 # (T)eams
