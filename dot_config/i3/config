@@ -403,3 +403,5 @@ bindsym $mod+Ctrl+l exec i3lock --show-failed-attempts --image="$HOME/Pictures/s
 # Chatterino - (T)witch
 bindsym $mod+Shift+T exec notify-send -t 5000 -i /home/mas/Pictures/icons/chatterino2.png "Lauching" "<span color='pink' font='26px'><b>Chatterino</b></span>" && exec chatterino
 
+# (N)etworkManager
+bindsym $mod+Shift+N exec notify-send -t 5000 "Lauching" "<span color='pink' font='26px'><b>NetworkManager</b></span>" && exec networkmanager_dmenu
