@@ -2,30 +2,60 @@ Sxiv.background: #040217
 
 xterm*cursorColor:	#C9A6C9
 xterm*pointerShape:	xterm
-xterm*pointerColor:	#D52C70
+xterm*pointerColor:	#D52D70
+!xterm*pointerColorBackground: #D52D70
+xterm*cursorBlink: 	true
 xterm*faceSize:		12
 xterm*faceName: 	wts11
 
+!!! Colors !!!
+! special
+*.foreground:   #ff70ff
+*.background:   #040217
+*.cursorColor:  #ff70ff
 
-*.foreground: #FF70FF
-*.background: #040217
-*.color0:     #000000
-*.color8:     #4D4D4D
-*.color1:     #FF5555
-*.color9:     #FF6E67
-*.color2:     #50FA7B
-*.color10:    #5AF78E
-*.color3:     #F1FA8C
-*.color11:    #F4F99D
-*.color4:     #BD93F9
-*.color12:    #CAA9FA
-*.color5:     #FF79C6
-*.color13:    #FF92D0
-*.color6:     #8BE9FD
-*.color14:    #9AEDFE
-*.color7:     #BFBFBF
-*.color15:    #E6E6E6
+! black
+*.color0:       #000000
+*.color8:       #4d4d4d
 
+! red
+*.color1:       #ff5555
+*.color9:       #ff6e67
+
+! green
+*.color2:       #50fa7b
+*.color10:      #5af78e
+
+! yellow
+*.color3:       #f1fa8c
+*.color11:      #f4f99d
+
+! blue
+*.color4:       #bd93f9
+*.color12:      #caa9fa
+
+! magenta
+*.color5:       #ff79c6
+*.color13:      #ff92d0
+
+! cyan
+*.color6:       #8be9fd
+*.color14:      #9aedfe
+
+! white
+*.color7:       #bfbfbf
+*.color15:      #e6e6e6
+!!! Colors !!!
 
 *.alpha: 0.8
 *.font: monospace:size=11
+
+! Extending Buffer History
+XTerm*SaveLines: 9000
+
+xterm*utf8: 1
+
+! select links with triple click & open them with shift
+xterm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+xterm*on3Clicks: regex ([[:alpha:]]+://)?([[:alnum:]!#+,./=?@_~-]|(%[[:xdigit:]][[:xdigit:]]))+
+xterm*translations: #override Shift <Btn1Up>: exec-formatted("xdg-open '%t'", PRIMARY)  select-start() select-end()
