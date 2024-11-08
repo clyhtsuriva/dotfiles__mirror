@@ -40,8 +40,9 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
+# Two ways to start a terminal
 bindsym $mod+Return exec $TERMINAL
+bindsym Ctrl+Shift+Escape exec $TERMINAL
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -224,7 +225,7 @@ bindsym $mod+Shift+S exec "i3-nagbar -t warning -f fixed -m 'You pressed the sus
 bindsym $mod+Shift+Delete exec "i3-nagbar -t warning -f fixed -m 'You pressed the hibernating shortcut. Do you really want to put your computer to sleep?' -B 'Yes, do it.' 'sudo /bin/ZZZ'"
 
 # What happens when we hit the power button
-bindsym XF86PowerOff exec xcowsay "$(fortune -s)"
+bindsym XF86PowerOff exec xcowsay "$(date +%H:%M:%S && cat /sys/class/power_supply/BAT0/capacity && pactl get-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo | cut -d' '  -f5-6)"
 
 ######GAPS######
 set $mode_gaps Gaps: (o)uter, (i)nner, (h)orizontal, (v)ertical, (t)op, (r)ight, (b)ottom, (l)eft
@@ -363,7 +364,7 @@ bindsym XF86AudioNext exec playerctl next
 #bindsym XF86AudioPrev exec playerctl previous
 
 # Screenshot with scrot
-#bindsym Print exec notify-send -t 5000 -i /home/mas/Pictures/icons/screenshot.png "Launching" "<span color='cyan' font='26px'><b>scrot</b></span>" ; exec scrot --silent --exec 'mv $f ~/Pictures/screenshots && sxiv ~/Pictures/screenshots/$f'
+bindsym Print exec notify-send -t 5000 -i /home/mas/Pictures/icons/screenshot.png "Launching" "<span color='cyan' font='26px'><b>scrot</b></span>" ; exec scrot --silent --exec 'mv $f ~/Pictures/screenshots && sxiv ~/Pictures/screenshots/$f'
 
 # (C)hromium
 bindsym $mod+Shift+C exec notify-send -t 5000 -i /usr/share/icons/hicolor/256x256/apps/chromium.png "Opening" "<span color='#5D7FD2' font='26px'><b>chromium</b></span>" ; exec chromium

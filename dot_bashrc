@@ -18,6 +18,7 @@ export XDG_CACHE_HOME="$HOME"/.cache
 export ANSIBLE_HOME="$XDG_DATA_HOME"/ansible
 export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 export ANDROID_HOME="$XDG_DATA_HOME"/android
+export ANDROID_USER_HOME="$XDG_DATA_HOME"/android
 export HISTFILE="$XDG_STATE_HOME"/bash/history
 export LESSHISTFILE="$XDG_CACHE_HOME"/less/history
 export PYTHONSTARTUP="$XDG_CONFIG_HOME"/python/pythonrc
@@ -25,12 +26,14 @@ export W3M_DIR="$XDG_DATA_HOME"/w3m
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 export NODE_REPL_HISTORY="$XDG_DATA_HOME"/node_repl_history
 export MYPY_CACHE_DIR="$XDG_CACHE_HOME"/mypy
+export CALCHISTFILE="$XDG_CACHE_HOME"/calc_history
+export CARGO_HOME="$XDG_DATA_HOME"/cargo
+export DOTNET_CLI_HOME="$XDG_DATA_HOME"/dotnet
+export GDBHISTFILE="$XDG_CONFIG_HOME"/gdb/.gdb_history
 
 PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\w\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]" ; export PS1
 
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 
-# using echo because -bash, for exemple, would break figlet
-echo "$0" | figlet | lolcat -f -r -l -v 1 -h 1
-
-. "$HOME/.cargo/env"
+# Rust package manager
+. "$CARGO_HOME/env"

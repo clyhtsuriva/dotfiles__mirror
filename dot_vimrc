@@ -39,8 +39,8 @@ Plug 'itchyny/lightline.vim'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 
 call plug#end()
-"Ctrlp Settings {{{
 
+"Ctrlp Settings {{{
 let g:ctrlp_map = '<c-p>'
 
 let g:ctrlp_cmd = 'ctrlp'
@@ -50,7 +50,6 @@ set wildignore+=*/.git/*,*/tmp/*,*.swp/*,*/node_modules/*,*/temp/*,*/Builds/*,*/
 " Set no max file limit
 let g:ctrlp_max_files = 0
 " Search from current directory instead of project root
-
 
 function! CtrlPCommand()
   let c = 0
@@ -75,6 +74,7 @@ let g:ctrlp_custom_ignore = {
       \ 'file': '\.so$\|\.dat$|\.DS_Store$|\.meta|\.zip|\.rar|\.ipa|\.apk',
       \ }
 " }}}
+
 "Ale Settings {{{
 
 let g:ale_echo_msg_error_str = 'E'
@@ -90,8 +90,8 @@ let g:ale_linters = {
       \  'java': ['javac']
       \ }
 " }}}
-" Deoplete {{{
 
+" Deoplete {{{
 let g:deoplete#enable_at_startup = 1
 
 let g:deoplete#custom#auto_complete_start_length = 2
@@ -129,6 +129,7 @@ let g:UltiSnipsSnippetDirectories = ['~/.vim/UltiSnips', 'UltiSnips']
 let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
 
 " }}}
+
 " Java {{{
 
 " Easy compile java in vim
@@ -144,3 +145,6 @@ set termguicolors
 let g:Hexokinase_highlighters = ['virtual']
 let g:Hexokinase_optInPatterns = 'full_hex,rgb,rgba,hsl,hsla'
 " ]
+
+" Set the colorscheme
+colorscheme torte
