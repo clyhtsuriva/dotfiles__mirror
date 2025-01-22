@@ -31,7 +31,10 @@ export CARGO_HOME="$XDG_DATA_HOME"/cargo
 export DOTNET_CLI_HOME="$XDG_DATA_HOME"/dotnet
 export GDBHISTFILE="$XDG_CONFIG_HOME"/gdb/.gdb_history
 
-PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\w\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\n\\$ \[$(tput sgr0)\]" ; export PS1
+parse_git_branch() {
+    git branch 2>/dev/null | grep '\*' | sed 's/* /(/' | sed 's/$/)/'
+}
+PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\w\[$(tput setaf 6)\] \$(parse_git_branch)\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\n\\$ \[$(tput sgr0)\]" ; export PS1
 
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 
