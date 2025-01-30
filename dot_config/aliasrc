@@ -14,7 +14,7 @@ alias mpv='mpv --input-ipc-server=/tmp/mpvsoc$(date +%s)' \
 	l='ls -1' \
 	ll='ls -lt' \
 	xbacklight='sudo xbacklight' \
-	ipconfig='curl -sS ipconfig.io' \
+	ipconfig='curl -4 -sS ipconfig.io' \
 	cp='cp -v' \
 	mv='mv -v' \
 	mkdir='mkdir -v' \
