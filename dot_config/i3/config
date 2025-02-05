@@ -142,7 +142,7 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # reload the configuration file
-#bindsym $mod+Shift+c reload
+bindsym $mod+Shift+t reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
@@ -161,7 +161,7 @@ mode "resize" {
         bindsym k resize shrink height 10 px or 10 ppt
         bindsym l resize grow width 10 px or 10 ppt
 
-        # same bindings, but for the arrow keys
+         # same bindings, but for the arrow keys
 #        bindsym Left resize shrink width 10 px or 10 ppt
 #        bindsym Down resize grow height 10 px or 10 ppt
 #        bindsym Up resize shrink height 10 px or 10 ppt
@@ -194,15 +194,10 @@ bar {
         status_command i3status
 }
 
-# Firefox - (W)eb browser
-bindsym $mod+Shift+W exec notify-send -t 5000 -i /usr/share/icons/hicolor/256x256/apps/firefox.png "Opening" "<span color='#ff6600' font='26px'><b>firefox</b></span>" ; exec firefox
 # Power off - X
 bindsym $mod+Shift+X exec "i3-nagbar -t error -f fixed -m 'You pressed the shutting shortcut. Do you really eant to shut you computer?' -B 'Yes, shut it.' 'sudo /bin/poweroff'"
 # Reboot - BackSpace
 bindsym $mod+Shift+BackSpace exec "i3-nagbar -t error -f fixed -m 'You pressed the restarting shortcut. Do you really eant to restart you computer?' -B 'Yes, restart it.' 'sudo /bin/reboot'"
-# (T)eams
-#  (P)assword manager
-#bindsym $mod+Shift+P exec passmenu
 
 # Set the bg wallpaper
 exec --no-startup-id feh --bg-scale /home/mas/Pictures/retrowave-pyramid.png
@@ -352,9 +347,14 @@ mode "$mode_gaps_left" {
 gaps inner 10
 ######GAPS######
 
+# Remove the header of windows
+default_border pixel 2
 
-# (D)iscord
-bindsym $mod+Shift+D exec notify-send -t 5000 -i /home/mas/Pictures/icons/discord.png "Opening" "<span color='#738ADB' font='26px'><b>Discord</b></span>" ; exec Discord
+# Urgency i3 opt-out option
+bindsym $mod+Shift+F10 exec i3-msg exit
+
+# Change i3-wm workspace names based on content
+exec_always --no-startup-id /usr/bin/i3wsr
 
 # Media Player Controls
 #bindsym ISO_Level3_Shift+F7
@@ -366,43 +366,31 @@ bindsym XF86AudioNext exec playerctl next
 # Screenshot with scrot
 bindsym Print exec notify-send -t 5000 -i /home/mas/Pictures/icons/screenshot.png "Launching" "<span color='cyan' font='26px'><b>scrot</b></span>" ; exec scrot --silent --exec 'mv $f ~/Pictures/screenshots && sxiv ~/Pictures/screenshots/$f'
 
-# (C)hromium
-bindsym $mod+Shift+C exec notify-send -t 5000 -i /usr/share/icons/hicolor/256x256/apps/chromium.png "Opening" "<span color='#5D7FD2' font='26px'><b>chromium</b></span>" ; exec chromium
-
 # Mount/Umount on the drives - F10/F11
 bindsym $mod+F10 exec dmenumount
 bindsym $mod+F11 exec dmenuumount
+
+# US and FR keyboard mapping - (U)S/(F)R
+bindsym $mod+Shift+U exec setxkbmap us && exec notify-send -t 5000 "US xkbmap"
+bindsym $mod+Shift+F exec setxkbmap fr && exec notify-send -t 5000 "FR xkbmap"
+
+#(L)ock
+bindsym $mod+Ctrl+l exec i3lock --show-failed-attempts --image="$HOME/Pictures/superhot_wpp.png"
+
+# (N)etworkManager
+bindsym $mod+Shift+N exec notify-send -t 5000 "Lauching" "<span color='pink' font='26px'><b>NetworkManager</b></span>" && exec networkmanager_dmenu
+
+# Firefox - (W)eb browser
+bindsym $mod+Shift+W exec notify-send -t 5000 -i /usr/share/icons/hicolor/256x256/apps/firefox.png "Opening" "<span color='#ff6600' font='26px'><b>firefox</b></span>" ; exec firefox
+
+# (C)hromium
+bindsym $mod+Shift+C exec notify-send -t 5000 -i /usr/share/icons/hicolor/256x256/apps/chromium.png "Opening" "<span color='#5D7FD2' font='26px'><b>chromium</b></span>" ; exec chromium
+
+# (D)iscord
+bindsym $mod+Shift+D exec notify-send -t 5000 -i /home/mas/Pictures/icons/discord.png "Opening" "<span color='#738ADB' font='26px'><b>Discord</b></span>" ; exec Discord
 
 # (V)irtualBox
 bindsym $mod+Shift+V exec notify-send -t 5000 -i /usr/share/icons/hicolor/128x128/mimetypes/virtualbox.png "Launching" "<span color='blue' font='26px'><b>VirtualBox</b></span>" ; exec VirtualBox
 
 # Thunderbird - (M)ail
 bindsym $mod+Shift+M exec notify-send -t 5000 -i /usr/share/icons/hicolor/256x256/apps/thunderbird.png "Launching" "<span color='blue' font='26px'><b>Thunderbird</b></span>" ; exec thunderbird
-
-# US and FR keyboard mapping - (U)S/(F)R
-bindsym $mod+Shift+U exec setxkbmap us && exec notify-send -t 5000 "US xkbmap"
-bindsym $mod+Shift+F exec setxkbmap fr && exec notify-send -t 5000 "FR xkbmap"
-
-# Network manager - (I)nternet
-bindsym $mod+Shift+I exec networkmanager_dmenu
-
-# Krita - F1
-bindsym $mod+Shift+F1 exec notify-send -t 5000 -i /usr/share/icons/hicolor/1024x1024/apps/krita.png "Lauching" "<span color='pink' font='26px'><b>Krita</b></span>" && exec krita
-
-# Remove the header of windows
-default_border pixel 2
-
-# Urgency i3 opt-out option
-bindsym $mod+Shift+F10 exec i3-msg exit
-
-# Change i3-wm workspace names based on content
-exec_always --no-startup-id /usr/bin/i3wsr
-
-#(L)ock
-bindsym $mod+Ctrl+l exec i3lock --show-failed-attempts --image="$HOME/Pictures/superhot_wpp.png"
-
-# Chatterino - (T)witch
-bindsym $mod+Shift+T exec notify-send -t 5000 -i /home/mas/Pictures/icons/chatterino2.png "Lauching" "<span color='pink' font='26px'><b>Chatterino</b></span>" && exec chatterino
-
-# (N)etworkManager
-bindsym $mod+Shift+N exec notify-send -t 5000 "Lauching" "<span color='pink' font='26px'><b>NetworkManager</b></span>" && exec networkmanager_dmenu

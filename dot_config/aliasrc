@@ -29,3 +29,6 @@ alias mpv='mpv --input-ipc-server=/tmp/mpvsoc$(date +%s)' \
 	k=kubectl \
 	t=task \
 	tl='task --list-all' \
+	sshvps='ssh debian@vps.vpn -p8022' \
+	sshpve='ssh pve.vpn -p8022' \
+	sshwin='ssh win.vpn -p8022' \
