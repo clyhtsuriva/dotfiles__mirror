@@ -387,7 +387,7 @@ bindsym $mod+Shift+W exec notify-send -t 5000 -i /usr/share/icons/hicolor/256x25
 bindsym $mod+Shift+C exec notify-send -t 5000 -i /usr/share/icons/hicolor/256x256/apps/chromium.png "Opening" "<span color='#5D7FD2' font='26px'><b>chromium</b></span>" ; exec chromium
 
 # (D)iscord
-bindsym $mod+Shift+D exec notify-send -t 5000 -i /home/mas/Pictures/icons/discord.png "Opening" "<span color='#738ADB' font='26px'><b>Discord</b></span>" ; exec Discord
+bindsym $mod+Shift+D exec notify-send -t 5000 -i /home/mas/Pictures/icons/vesktop.png "Opening" "<span color='#738ADB' font='26px'><b>Vesktop</b></span>" ; exec Vesktop
 
 # (V)irtualBox
 bindsym $mod+Shift+V exec notify-send -t 5000 -i /usr/share/icons/hicolor/128x128/mimetypes/virtualbox.png "Launching" "<span color='blue' font='26px'><b>VirtualBox</b></span>" ; exec VirtualBox

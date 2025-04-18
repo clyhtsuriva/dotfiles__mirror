@@ -30,6 +30,7 @@ export CALCHISTFILE="$XDG_CACHE_HOME"/calc_history
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
 export DOTNET_CLI_HOME="$XDG_DATA_HOME"/dotnet
 export GDBHISTFILE="$XDG_CONFIG_HOME"/gdb/.gdb_history
+export ANSIBLE_CONFIG="$HOME/workbench/homelab-iac/ansible/ansible.cfg"
 
 parse_git_branch() {
     git branch 2>/dev/null | grep '\*' | sed 's/* /(/' | sed 's/$/)/'
