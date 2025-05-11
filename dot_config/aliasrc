@@ -1,6 +1,6 @@
 #!/bin/sh
 
-alias mpv='mpv --input-ipc-server=/tmp/mpvsoc$(date +%s)' \
+alias mpv='mpv --input-ipc-server=/tmp/mpvsoc$(date +%s) --profile=fast --hwdec=auto-safe' \
 	xi="sudo xbps-install" \
 	xr="sudo xbps-remove" \
 	xq="xbps-query" \
